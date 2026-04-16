@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAUVAGE - Dior Perfume | Official Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>SAUVAGE</h1>
+                <span class="by-dior">by DIOR</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="lang-switch">
+                    <i class="fas fa-globe"></i>
+                    <select id="language">
+                        <option value="en">EN</option>
+                        <option value="ar">عربي</option>
+                        <option value="fr">FR</option>
+                        <option value="es">ES</option>
+                    </select>
+                </button>
+                <a href="#cart" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-subtitle">The New</h2>
+            <h1 class="hero-title">SAUVAGE ELIXIR</h1>
+            <p class="hero-description">A composition with powerful freshness, directed by François Demachy. A radical freshness, orchestrated by an ambergris note.</p>
+            <div class="hero-buttons">
+                <a href="#collection" class="btn btn-primary">Shop Now</a>
+                <a href="#about" class="btn btn-secondary">Discover More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://fimgs.net/mdimg/perfume/375x500.65927.jpg" alt="Sauvage Elixir Bottle">
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Sauvage Collection</h2>
+                <p>Explore the different interpretations of Sauvage</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="https://fimgs.net/mdimg/perfume/375x500.48645.jpg" alt="Sauvage Eau de Toilette">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sauvage Eau de Toilette</h3>
+                        <p class="product-desc">Powerful freshness with noble raw materials</p>
+                        <div class="product-price">
+                            <span class="price">$92.00</span>
+                            <span class="size">100ml / 3.4 fl oz</span>
+                        </div>
+                        <button class="btn-add-cart" onclick="addToCart('Sauvage EDT', 92)">
+                            <i class="fas fa-shopping-bag"></i> Add to Bag
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card featured">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="https://fimgs.net/mdimg/perfume/375x500.65927.jpg" alt="Sauvage Elixir">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sauvage Elixir</h3>
+                        <p class="product-desc">Concentrated composition with Lavender from Provence</p>
+                        <div class="product-price">
+                            <span class="price">$165.00</span>
+                            <span class="size">60ml / 2.0 fl oz</span>
+                        </div>
+                        <button class="btn-add-cart" onclick="addToCart('Sauvage Elixir', 165)">
+                            <i class="fas fa-shopping-bag"></i> Add to Bag
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://fimgs.net/mdimg/perfume/375x500.55355.jpg" alt="Sauvage Eau de Parfum">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sauvage Eau de Parfum</h3>
+                        <p class="product-desc">Denser, rounder, and more sensual interpretation</p>
+                        <div class="product-price">
+                            <span class="price">$115.00</span>
+                            <span class="size">100ml / 3.4 fl oz</span>
+                        </div>
+                        <button class="btn-add-cart" onclick="addToCart('Sauvage EDP', 115)">
+                            <i class="fas fa-shopping-bag"></i> Add to Bag
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://fimgs.net/mdimg/perfume/375x500.61642.jpg" alt="Sauvage Parfum">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sauvage Parfum</h3>
+                        <p class="product-desc">Intense fragrance with Sandalwood from Australia</p>
+                        <div class="product-price">
+                            <span class="price">$135.00</span>
+                            <span class="size">100ml / 3.4 fl oz</span>
+                        </div>
+                        <button class="btn-add-cart" onclick="addToCart('Sauvage Parfum', 135)">
+                            <i class="fas fa-shopping-bag"></i> Add to Bag
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>The Essence of Sauvage</h2>
+                    <p class="lead">"Sauvage is a composition with powerful freshness, directed by François Demachy."</p>
+                    <p>Noble raw materials are born of a generous nature. A powerful freshness, directed by François Demachy. An ambergris note, woody, precious, warm, sensual and deep.</p>
+                    <p>The name Sauvage evokes wide-open spaces, a blue sky cloak over a landscape composed of red rocks, scorching in the sunlight.</p>
+                    
+                    <div class="notes-grid">
+                        <div class="note-item">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Top Notes</h4>
+                            <p>Calabrian Bergamot, Pepper</p>
+                        </div>
+                        <div class="note-item">
+                            <i class="fas fa-flower"></i>
+                            <h4>Heart Notes</h4>
+                            <p>Lavender, Sichuan Pepper, Vetiver</p>
+                        </div>
+                        <div class="note-item">
+                            <i class="fas fa-tree"></i>
+                            <h4>Base Notes</h4>
+                            <p>Ambergris, Cedar, Labdanum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.48645.jpg" alt="Sauvage Campaign">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>On orders over $100 worldwide</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-gift"></i>
+                    <h3>Free Samples</h3>
+                    <p>With every order</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Payment</h3>
+                    <p>100% secure checkout</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to help you find your perfect scent</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Paris, France<br>Worldwide Shipping</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+33 1 40 62 12 12</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>contact@sauvage-store.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Select Inquiry Type</option>
+                            <option value="product">Product Information</option>
+                            <option value="order">Order Status</option>
+                            <option value="shipping">Shipping Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>SAUVAGE</h2>
+                    <p class="by-dior">by DIOR</p>
+                    <p>A fragrance for those who dare to be wild and free.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SAUVAGE by DIOR. All rights reserved. | Worldwide Shipping Available</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
